@@ -1,0 +1,463 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+header {
+  height: 15vh;
+  padding: 2% 7%;
+  background: #0c0820;
+}
+
+.barra {
+  background: #0c0820;
+  padding: 5px;
+  border: 0px solid rgb(235, 222, 222);
+  height: 100%;
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: block;
+  border-radius: 50%;
+  height: 3rem;
+}
+
+.nav a {
+  display: inline-block;
+}
+
+.nav > a:hover {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 16px;
+  color: #df00f3;
+  letter-spacing: 0;
+  line-height: 28px;
+  font-weight: bold;
+}
+
+.nav > a:active {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 16px;
+  color: rgba(6, 10, 36, 0.56);
+  letter-spacing: 0;
+  line-height: 28px;
+}
+
+.font1 a {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 16px;
+  color: #060a24;
+  letter-spacing: 0;
+  line-height: 2.8vh;
+  text-decoration: none;
+  margin-left: 25px;
+}
+body {
+  width: 100%;
+  height: 100%;
+}
+.imagen-fondo {
+  width: 100%;
+}
+
+.nav > a {
+  color: #f1b903;
+  display: inline-block;
+  text-decoration: none;
+  margin-right: 2rem;
+}
+
+h1 {
+  font-family: "IBM Plex Mono", monospace;
+  color: #ebb80a;
+}
+h2 {
+  font-size: 3.4rem;
+}
+h3 {
+  font-size: 3rem;
+}
+h4 {
+  font-size: 2.6rem;
+}
+
+#Nosotros {
+  position: relative;
+  background-color: rgb(12, 8, 32);
+}
+
+.clases {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #e1dfdc;
+  background-image: url("./img/yellow.jpg");
+  background-attachment: fixed;
+  margin: -1rem 0;
+}
+.clases > img {
+  width: 50%;
+  padding: 1rem;
+}
+.clases > div {
+  color: #e1dfdc;
+  font-family: "IBM Plex Mono", monospace;
+  padding: 3rem;
+}
+.font2 {
+  color: #e1dfdc;
+  word-spacing: 1.5%;
+  font-family: "Muli", sans-serif;
+}
+
+/* teachers */
+#Teachers1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ebb80a;
+    background-color: #0c0820;
+    padding-top: 6rem;
+    font-family: "IBM Plex Mono", monospace;
+
+}
+#Teachers {
+  margin-top: rem;  
+  background-color: #0c0820;
+  display: flex;
+  justify-content: space-around;
+  padding: 8rem 5rem;
+  flex-wrap: wrap;
+}
+.teacher > img {
+  background-color: #ebb80a;
+
+  border-radius: 50%;
+  margin: 1rem;
+}
+
+/* contact us */
+#Contact {
+  padding: 6rem;
+  background-color: #e1dfdc;
+  background-image: url("./img/yellow.jpg");
+
+  background-attachment: fixed;
+  font-family: "IBM Plex Mono", monospace;
+  color: #f1b903;
+}
+
+input:not([type="submit"]),
+textarea,
+select {
+  padding: 1rem;
+  display: block;
+  width: 100%;
+  background-color: #e1e1e1;
+  margin-bottom: 2rem;
+  margin-top: 0.5rem;
+  border: none;
+  border-radius: 1rem;
+}
+
+.formulario {
+  display: flex;
+  font-size: 1.2rem;
+}
+
+form > div > input {
+  width: 50%;
+}
+
+.boton:hover {
+  cursor: pointer;
+}
+.boton {
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  margin-top: 3rem;
+  display: inline-block;
+  text-align: center;
+  border: none;
+  background-color: #ebb80a;
+}
+
+/* footer */
+
+footer {
+  height: 12vh;
+  border: 5px solid #0c0820;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10vh;
+  background-color: #0c0820;
+}
+
+.span {
+  display: block;
+  display: flex;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 20px;
+  color: #ebb80a;
+  letter-spacing: 0;
+  line-height: 28px;
+}
+
+.ico {
+  display: block;
+  display: flex;
+  width: 30%;
+  justify-content: space-around;
+}
+
+i {
+  color: #ebb80a;
+}
+/* menu hamburguesa */
+
+.menu-wrap {
+  position: absolute;
+  top: -2px;
+  right: 0;
+  z-index: 1;
+  padding: 15px;
+}
+
+.menu-wrap .toggler {
+  position: absolute;
+  top: 2px;
+  right: 0;
+  z-index: 2;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  opacity: 0;
+}
+
+.menu-wrap .hamburger {
+  position: relative;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  width: 60px;
+  height: 60px;
+  padding: 1rem;
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/*HAMBUER LINE*/
+
+.menu-wrap .hamburger > div {
+  position: relative;
+  width: 100%;
+  height: 3px;
+  background-color: #f1b903;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+}
+/*TOP AND BOTTOBMLINES*/
+
+.menu-wrap .hamburger > div:before,
+.menu-wrap .hamburger > div:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: -10px;
+  width: 100%;
+  height: 3px;
+  background: inherit;
+}
+/*MOVES LINE DOWN*/
+
+.menu-wrap .hamburger > div::after {
+  top: 10px;
+}
+/*Toggler animate*/
+
+.menu-wrap .toggler:checked + .hamburger > div {
+  transform: rotate(135deg);
+}
+/*Turn lines into*/
+
+.menu-wrap .toggler:checked + .hamburger > div:before,
+.menu-wrap .toggler:checked + .hamburger > div:after {
+  top: 0;
+  transform: rotate(90deg);
+}
+/*rotate on hover when checked*/
+
+.menu-wrap .toggler:checked + .hamburger > div:before {
+  transform: rotate(255deg);
+}
+/*Sho menu*/
+
+.menu-wrap .toggler:checked ~ .menu {
+  visibility: visible;
+}
+
+.menu-wrap .toggler:checked ~ .menu > div {
+  transform: scale(1);
+  transition-duration: var(--menu-speed);
+}
+
+.menu-wrap .toggler:checked ~ .menu > div > div {
+  opacity: 1;
+  transition: opacity 0.4s ease;
+}
+
+.menu-wrap .menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-wrap .menu > div {
+  background: #0c0820;
+  width: 200vw;
+  height: 50vw;
+  display: flex;
+  flex: none;
+  align-items: flex-start;
+  justify-content: center;
+  transform: scale(0);
+  transition: all 0.4s ease;
+  position: absolute;
+  top: 12vh;
+  left: 0vw;
+}
+
+.menu-wrap .menu > div > div {
+  text-align: left;
+  max-width: 90vw;
+  max-height: 100vh;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.menu-wrap .menu > div > div > ul {
+  position: absolute;
+  top: 0vh;
+  left: 0vw;
+}
+
+.menu-wrap .menu > div > div > ul > li {
+  list-style: none;
+  color: #f1b903;
+  font-size: 2.5vh;
+  padding: 0.7rem;
+}
+
+.menu-wrap .menu > div > div > ul > li > a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.4s ease;
+}
+
+@media screen and (max-width: 600px) {
+  * {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+  }
+
+  body {
+    border: none;
+  }
+  header {
+    height: 12vh;
+    border: none;
+    padding: 2vh;
+  }
+  .imagen-fondo {
+  }
+
+  .nav {
+    display: none;
+  }
+
+  #Teachers {
+    display: flex; 
+    flex-wrap: wrap; 
+  }
+  
+  .teachers{
+    display: flex; 
+    flex-wrap: wrap; 
+  }
+  
+  .teacher > img {
+    background-color: #ebb80a;
+    border-radius: 50%;
+    margin: 2rem;
+  }
+
+  .clases {
+    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px; 
+    margin: -1rem 0;
+  }
+  .clases > img {
+    width: 100%; 
+    padding: 1rem;
+  }
+
+  .clases > div { 
+    font-family: "IBM Plex Mono", monospace;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    padding: 10vh 0;
+    justify-content: space-around;
+  }
+  .span {
+    display: block;
+    display: flex;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 16px;
+    color: #ebb80a;
+    letter-spacing: 0;
+    line-height: 28px;
+  }
+  .ico {
+    display: block;
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+  }
+  i {
+    padding: 3vh 0;
+    color: #f1b903;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .menu-wrap {
+    display: none;
+  }
+}
